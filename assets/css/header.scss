@@ -25,6 +25,12 @@
         color: white;
     }
 
+    .logo a img {
+        height: 2.3rem; 
+        width: auto;
+        vertical-align: middle;
+    }
+
     .nav-links {
         list-style: none;
         display: flex;
