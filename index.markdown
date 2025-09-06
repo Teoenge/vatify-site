@@ -6,6 +6,46 @@ layout: home
 css: home.css
 ---
 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const slider = document.querySelector('.screenshots');
+    let isDragging = false;
+    let startX;
+    let scrollLeft;
+
+    // Desktop: mouse events
+    slider.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+        slider.classList.add('active');
+    });
+    slider.addEventListener('mouseleave', () => isDragging = false);
+    slider.addEventListener('mouseup', () => isDragging = false);
+    slider.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 0.5;
+        slider.scrollLeft = scrollLeft - walk;
+    });
+
+    // Mobile: touch events
+    slider.addEventListener('touchstart', (e) => {
+        isDragging = true;
+        startX = e.touches[0].pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+    });
+    slider.addEventListener('touchend', () => isDragging = false);
+    slider.addEventListener('touchmove', (e) => {
+        if (!isDragging) return;
+        const x = e.touches[0].pageX - slider.offsetLeft;
+        const walk = (x - startX) * 1.0;
+        slider.scrollLeft = scrollLeft - walk;
+    });
+});
+</script>
+
 <!-- Hero Section -->
 <section>
     <h1>VATify – USt-IdNrn zuverlässig prüfen</h1>
@@ -47,6 +87,7 @@ css: home.css
         <img src="assets/images/mockup.png" alt="VATify Screenshot 1">
         <img src="assets/images/mockup.png" alt="VATify Screenshot 2">
         <img src="assets/images/mockup.png" alt="VATify Screenshot 3">
+        <img src="assets/images/mockup.png" alt="VATify Screenshot 4">
     </div>
 </section>
 

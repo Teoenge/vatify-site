@@ -45,12 +45,20 @@ section p {
 /* Screenshots */
 .screenshots {
     display: flex;
-    overflow-x: auto;
+    overflow-x: hidden;
     gap: 15px;
     padding-bottom: 10px;
+    user-select: none;
+    cursor: grab;
 }
+
+.screenshots:active {
+    cursor: grabbing;
+}
+
 .screenshots img {
     height: 400px;
+    pointer-events: none;
 }
 
 /* Responsive */
