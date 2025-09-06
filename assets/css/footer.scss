@@ -1,0 +1,38 @@
+---
+---
+
+@import "variables";
+
+.site-footer {
+    background-color: #101820;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .footer-container p {
+        margin: 0;
+    }
+
+    .footer-nav {
+        margin: 0;
+    }
+
+    .footer-nav a {
+        color: white;
+    }
+
+    .footer-nav a:not(:first-child) {
+        margin-left: 10px;
+    }
+
+    .footer-nav a:not(:last-child) {
+        margin-right: 10px;
+    }
+}
