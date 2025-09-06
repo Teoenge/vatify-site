@@ -1,0 +1,51 @@
+---
+---
+
+.download-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5rem;
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.qr-code {
+    width: 100%;
+}
+
+.play-badge {
+    width: 100%;
+}
+
+.mockup {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .download-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .qr-code, .play-badge, .mockup {
+        width: 90%;
+    }
+}
