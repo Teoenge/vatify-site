@@ -12,15 +12,12 @@
 
   <div class="header-content">
     <h1>{{ page.title | default: "&nbsp;" }}</h1>
-    {% if page.date %}
-      <p>Effective {{ page.date | date: "%B %d, %Y" }}</p>
-    {% endif %}
   </div>
 
   <!-- Smooth center dip curve -->
   <div class="header-curve">
     <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-      <path d="M0,60 C360,120 1080,120 1440,60 L1440,150 L0,150 Z" fill="white"/>
+      <path d="M0,60 C360,120 1080,120 1440,60 L1440,150 L0,150 Z" fill="#fdfdfd"/>
     </svg>
   </div>
 </header>
