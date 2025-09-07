@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <h1>VATify – USt-IdNrn zuverlässig prüfen</h1>
     <p>Prüfen Sie ausländische Umsatzsteuer-Identifikationsnummern schnell, einfach und rechtssicher – ideal für Buchhaltung und Rechnungsprüfung.</p>
     <a href="https://play.google.com/store/apps/details?id=your.app.id" target="_blank">
-        <img src="/assets/images/google_play_badge.png" alt="Download on Google Play" class="play-badge"/>
+        <img src="{{ '/assets/images/google_play_badge.png' | relative_url }}" alt="Download on Google Play" class="play-badge"/>
     </a>
 </section>
 
@@ -84,10 +84,10 @@ document.addEventListener('DOMContentLoaded', function() {
 <section>
     <h2>App-Vorschau</h2>
     <div class="screenshots">
-        <img src="assets/images/mockup.png" alt="VATify Screenshot 1">
-        <img src="assets/images/mockup.png" alt="VATify Screenshot 2">
-        <img src="assets/images/mockup.png" alt="VATify Screenshot 3">
-        <img src="assets/images/mockup.png" alt="VATify Screenshot 4">
+        <img src="{{ '/assets/images/mockup.png' | relative_url }}" alt="VATify Screenshot 1">
+        <img src="{{ '/assets/images/mockup.png' | relative_url }}" alt="VATify Screenshot 2">
+        <img src="{{ '/assets/images/mockup.png' | relative_url }}" alt="VATify Screenshot 3">
+        <img src="{{ '/assets/images/mockup.png' | relative_url }}" alt="VATify Screenshot 4">
     </div>
 </section>
 
@@ -95,6 +95,6 @@ document.addEventListener('DOMContentLoaded', function() {
 <section>
     <h2>Starten Sie jetzt – schnell, einfach, zuverlässig</h2>
     <a href="https://play.google.com/store/apps/details?id=your.app.id" target="_blank">
-        <img src="/assets/images/google_play_badge.png" alt="Download on Google Play" class="play-badge"/>
+        <img src="{{ '/assets/images/google_play_badge.png' | relative_url }}" alt="Download on Google Play" class="play-badge"/>
     </a>
 </section>
